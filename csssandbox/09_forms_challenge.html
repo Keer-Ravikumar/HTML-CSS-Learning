@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background: rgb(5, 5, 78);
+            font-family:Georgia, 'Times New Roman', Times, serif
+        }
+
+        .container{
+            background: white;
+            padding: 20px;
+            margin: auto;
+            width: 40%;
+            margin-top: 25px;
+            border: #f3f3f3 1px solid;
+            border-radius: 10px;
+        }
+
+        .container .title{
+            text-align: center;
+            padding: 1px;
+        }
+
+        .container .title h3, .container .title p{
+            padding: 2px;
+        }
+
+        .container label{
+            color: grey;
+            /* padding: 3px; */
+            /* margin: 2px; */
+        }
+
+        .container input{
+            /* margin: 2px; */
+            padding: 5px;
+            width: 90%;
+        }
+
+        .container .element{
+            padding: 1px;
+            margin: 10px 2px;
+            line-height: 1.7;
+        }
+
+        .container .element .btn{
+            padding: 10px;
+            background: rgb(14, 105, 14);
+            color: white;
+            border: none;
+        }
+
+        .container .text{
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+            font-size:small
+        }
+
+        a{
+            text-decoration: none;
+            color: blue
+        }
+
+        .login{
+            padding: 20px;
+            margin: auto;
+            width: 40%;
+            color: white;
+            text-align: center;
+        }
+
+        .login a{
+            color: green
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h3>Sign Up</h3>
+            <p>Its free and only takes a minute</p>
+        </div>
+        
+        <div class="element">
+            <label for="firstname">First Name</label><br>
+            <input type="text" name="firstname" id="firstname"><br>
+        </div>
+            
+        <div class="element">
+            <label for="lastname">Last Name</label><br>
+            <input type="text" name="lastname" id="lastname"><br>
+        </div>
+
+        <div class="element">
+            <label for="email">Email ID</label><br>
+            <input type="email" name="email" id="email"><br> 
+        </div>
+
+        <div class="element">
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password"><br>  
+        </div>
+
+        <div class="element">
+            <label for="C_password">Confirm Password</label><br>
+            <input type="text" name="C_password" id="C_password"><br>  
+        </div>
+
+        <div class="element">
+            <input class="btn" type="submit" value="Sign Up">
+        </div>
+
+        <div class="text">
+            <p>By clicking the Sign Up button you agree our <a href="#">Terms and Condition</a> and <a href="#">Privacy Policy</a></p>
+        </div>
+
+    </div>
+    <p class="login">Already have an account? <a href="#">Login Here</a></p>
+</body>
+</html>

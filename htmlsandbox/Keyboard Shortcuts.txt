@@ -1,0 +1,3 @@
+Alt + Arrow Down = Bring a line down
+Shift + Alt + Arrow Down = Copy a line to the below line
+Ctrl + Arrow Right = Move from word to word

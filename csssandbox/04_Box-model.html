@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #box-1, #box-2{
+            border: 2px solid red;
+            background: blanchedalmond;
+        }
+
+        #box-1{
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #box-2{
+            padding: 20px;
+            margin: 20px;
+        }
+
+        #box-1 h3, #box-2 h3{
+            padding: 10px 0px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="box-1">
+        <h3>Box 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Eveniet a adipisci labore mollitia veritatis recusandae praesentium, 
+            reprehenderit omnis. Quo similique a doloribus rerum minus facilis 
+            asperiores ipsum amet fugit vitae.
+        </p>
+    </div>
+
+    <div id="box-2">
+        <h3>Box 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Eveniet a adipisci labore mollitia veritatis recusandae praesentium,
+            reprehenderit omnis. Quo similique a doloribus rerum minus facilis
+            asperiores ipsum amet fugit vitae.
+        </p>
+    </div>
+    
+</body>
+</html>

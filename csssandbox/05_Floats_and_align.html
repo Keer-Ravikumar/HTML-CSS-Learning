@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floats and Align</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* To center a main div element */
+        .container{
+            max-width: 960px;
+            margin: auto;
+        }
+
+        .box{
+            background-color: #f3f3f3;
+            border: 1px solid #333;
+            margin: 5px;
+            padding: 3px;
+        }
+
+        #box-2{
+            float: left;
+            width: 48%;
+        }
+
+        #box-3{
+            float: right;
+            width: 48%;
+        }
+
+        /* To clear the float of previous elements */
+        .clear{
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box-1" class="box">
+            <h3>Heading 1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Veritatis facilis doloremque, sed sit corporis inventore 
+                exercitationem laboriosam provident dignissimos ab.   
+            </p>
+        </div>
+        <div id="box-2" class="box">
+            <h3>Heading 2</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Veritatis facilis doloremque, sed sit corporis inventore 
+                exercitationem laboriosam provident dignissimos ab.   
+            </p>
+        </div>
+        <div id="box-3" class="box">
+            <h3>Heading 3</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Veritatis facilis doloremque, sed sit corporis inventore 
+                exercitationem laboriosam provident dignissimos ab.   
+            </p>
+        </div>
+        <div id="box-4" class="clear box">
+            <h3>Heading 4</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Veritatis facilis doloremque, sed sit corporis inventore 
+                exercitationem laboriosam provident dignissimos ab.   
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>
