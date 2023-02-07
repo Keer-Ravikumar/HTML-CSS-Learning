@@ -1,0 +1,8 @@
+-- You will thank me Later -- 
+
+• Always Reset the Margin and Padding and set the Box-sizing to Border Box.
+• Set a Utility class called container with a specific width and auto margin to fit your content in the center.
+• Always set overflow to auto when a few things go invisible (As in Navbar or in container).
+• Have a Utility Class called button which can be reused for links as well as for buttons.
+• To add width or padding convert the inline element to a block level one.
+• ./img is looking inside the current folder and ../ is looking outside the folder.

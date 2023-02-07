@@ -15,7 +15,8 @@ li{
 }
 
 h1, h2, h3{
-    padding-bottom: 20px;
+    padding-bottom: 25px;
+    text-transform: capitalize;
 }
 
 p{
@@ -27,9 +28,47 @@ html, body{
 }
 
 .container{
-    width: 90%;
+    max-width: 1100px;
     margin: auto;
     overflow: auto;
+    padding: 0 20px;
+}
+
+.text-primary{
+    color:#f7c08a;
+}
+
+.lead{
+    line-height: 1.5em;
+    width: 70vw;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.btn{
+    border: none;
+    color: white;
+    background-color: #f7c08a;
+    padding: 10px;
+    display: inline-block;
+}
+
+.btn:hover{
+    background-color: black;
+}
+
+.bg-dark{
+    background: #444;
+    color: white;
+}
+
+.btn-light{
+    background-color: white;
+    color: #444;
+}
+
+.btn-light:hover{
+    color: white;
 }
 
 #navbar{
@@ -69,6 +108,54 @@ html, body{
     background: #444;
     color: #f7c08a;
 }
+
+#showcase{
+    background: url( '../Assets/img/showcase.jpg' ) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+#showcase .showcase-content{
+    text-align: center;
+    color: white;
+    padding-top: 180px;  
+    line-height: 1.2em;
+    overflow: hidden; 
+}
+
+#showcase .showcase-content h2{
+    font-size: 35px;
+}
+
+#home-info{
+    height: 400px;
+    overflow: hidden;
+}
+
+#home-info .info-img{
+    background: url( '../Assets/img/photo-1.jpg' );
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+#home-info .info-content{
+    width: 50%;
+    float: right;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 50px 30px;
+    line-height: 1.75em;
+}
+
+#home-info .info-content p{
+    padding-bottom: 15px;
+}
+
+
+
 
 
 
