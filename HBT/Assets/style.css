@@ -62,6 +62,11 @@ html, body{
     color: white;
 }
 
+.bg-active{
+    background: #f7c08a;
+    color: black;
+}
+
 .btn-light{
     background-color: white;
     color: #444;
@@ -69,6 +74,10 @@ html, body{
 
 .btn-light:hover{
     color: white;
+}
+
+.clr{
+    clear: both;
 }
 
 #navbar{
@@ -153,6 +162,30 @@ html, body{
 #home-info .info-content p{
     padding-bottom: 15px;
 }
+
+/* #features{
+    margin-top: 10px;
+} */
+
+#features i{
+    font-size: 45px;
+    margin-bottom: 2px;
+    margin-top: 10px;
+}
+
+#features .grid{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    padding: 15px;
+}
+
+#features .grid p{
+    margin-top: 15px;
+}
+
+
+
 
 
 
