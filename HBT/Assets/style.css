@@ -163,10 +163,6 @@ html, body{
     padding-bottom: 15px;
 }
 
-/* #features{
-    margin-top: 10px;
-} */
-
 #features i{
     font-size: 45px;
     margin-bottom: 2px;
@@ -182,6 +178,13 @@ html, body{
 
 #features .grid p{
     margin-top: 15px;
+}
+
+#main-footer{
+    text-align: center;
+    background: #444;
+    color: white;
+    padding: 5px;
 }
 
 

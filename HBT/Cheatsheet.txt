@@ -6,3 +6,4 @@
 • Have a Utility Class called button which can be reused for links as well as for buttons.
 • To add width or padding convert the inline element to a block level one.
 • ./img is looking inside the current folder and ../ is looking outside the folder.
+• Set a Utility class CLR which clears the previous floats(Always remember to clear them).
