@@ -27,6 +27,29 @@ html, body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
+/* Utility Classes */
+
+/* Padding and Margin */
+.py-1{ padding: 10px 0 }
+.py-2{ padding: 20px 0 }
+.py-3{ padding: 30px 0 }
+.py-4{ padding: 40px 0 }
+
+.px-1{ padding: 0 10px }
+.px-2{ padding: 0 20px }
+.px-3{ padding: 0 30px }
+.px-4{ padding: 0 40px }
+
+.my-1{ margin: 10px 0 }
+.my-2{ margin: 20px 0 }
+.my-3{ margin: 30px 0 }
+.my-4{ margin: 40px 0 }
+
+.mx-1{ margin: 0 10px }
+.mx-2{ margin: 0 20px }
+.mx-3{ margin: 0 30px }
+.mx-4{ margin: 0 40px }
+
 .container{
     max-width: 1100px;
     margin: auto;
@@ -51,6 +74,7 @@ html, body{
     background-color: #f7c08a;
     padding: 10px;
     display: inline-block;
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -76,9 +100,25 @@ html, body{
     color: white;
 }
 
+.btn-dark{
+    background: #444;
+    color: white;
+}
+
+.btn-dark:hover{
+    background: #f7c08a;
+    color: black;
+}
+
 .clr{
     clear: both;
 }
+
+.l-heading{
+    font-size: 30px;
+}
+
+/* Navbar */
 
 #navbar{
     background: black;
@@ -113,11 +153,17 @@ html, body{
     color: white; 
 }
 
+#navbar .current,
 #navbar ul li a:hover{
     background: #444;
     color: #f7c08a;
 }
 
+
+
+/* Index Page */
+
+/* Showcase Division */
 #showcase{
     background: url( '../Assets/img/showcase.jpg' ) no-repeat;
     background-position: center;
@@ -137,6 +183,7 @@ html, body{
     font-size: 35px;
 }
 
+/* Home Info Section */
 #home-info{
     height: 400px;
     overflow: hidden;
@@ -163,6 +210,7 @@ html, body{
     padding-bottom: 15px;
 }
 
+/* Features Section*/
 #features i{
     font-size: 45px;
     margin-bottom: 2px;
@@ -180,17 +228,147 @@ html, body{
     margin-top: 15px;
 }
 
-#main-footer{
+
+
+
+/* About Page */
+
+/* About Section */
+#about-info .info-left{
+    float: left;
+    width: 50%;
+}
+
+#about-info .info-left p {
+    text-align: justify;
+}
+
+#about-info .info-right{
+    float: right;
+    width: 50%;
+    min-height: 100%;
+}
+
+#about-info .info-right img{
+    display: block;
+    width: 70%;
+    margin: auto;
+    border-radius: 50%;
+}
+
+/* Contact Page */
+
+
+#contact-form h2,
+#contact-form p{
+    margin: 5px;
+    padding: 5px;
+}
+
+#contact-form .form-group{
+    padding: 5px;
+}
+
+#contact-form .form-group label,
+#contact-form .form-group input{
+    display: block;
+    width: 100%;  
+    margin: 2px; 
+}
+
+#contact-form .form-group textarea{
+    height: 140px;
+    width: 100%;
+}
+
+#contact-form .form-group label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#contact-form .form-group input{
+    padding: 5px;
+}
+
+#contact-form button{
+    margin-left: 5px;
+    border-radius: 2px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: #f7c08a;
+}
+
+
+#contact-info i {
+    font-size: 45px;
+    margin-bottom: 2px;
+    margin-top: 10px;
+}
+
+#contact-info .grid {
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: white
+}
+
+#contact-info .grid p {
+    margin-top: 15px;
+}
+
+#contact-info button{
+    margin: 20px;
+}
+
+
+
+/* Footer */
+#main-footer {
     text-align: center;
     background: #444;
     color: white;
     padding: 5px;
 }
 
+#testimonials{
+    background: url('./img/test-bg.jpg') no-repeat;
+    position: center;
+    display: cover;
+    min-height: 200px;
+    padding: 20px
 
+}
 
+#testimonials h1{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
 
+#testimonials .testimonial{
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    opacity: 0.8;
+}
 
+#testimonials .testimonial img{
+    height: 75px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+
+#testimonials .testimonial p{
+    padding: 2px;
+    line-height: 1.2
+}
 
 
 
