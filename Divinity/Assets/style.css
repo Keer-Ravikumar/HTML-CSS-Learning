@@ -67,6 +67,18 @@ body{
     font-family: 'Sono', sans-serif;
 }
 
+.grid-container-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+.grid-container-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+}
+
 /* Header */
 
 /* Nav Bar */
@@ -84,7 +96,6 @@ body{
 header #showcase{
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.75)), url('./img/Cover.jpg') center center/cover no-repeat;
     height: 90vh;
-    /* width: 100vw; */
     position: relative;
 }
 
@@ -108,28 +119,21 @@ header #showcase .poster .content{
 .Options{
     margin-top: 1rem;
     margin-bottom: 2rem;
-    /* padding: 1rem; */
-}
-
-.grid-container{
-    display: grid;
-    grid-template-columns: repeat( 3, 1fr);
-    place-items: center;
 }
 
 .grid-container .grid-items{
     margin: 1rem;
     padding: 1rem;
-    height: 15rem;
-    width: 15rem;  
+    height: auto;
+    width: auto; 
 }
 
 
 .grid-container .grid-items img{
     display: block;
     margin: 0 auto;
-    height: 90%;
-    width: 90%;  
+    height: 15rem; 
+    width: 15rem; 
 }
 
 
@@ -137,15 +141,73 @@ header #showcase .poster .content{
     margin: 0.25rem;
 }
 
+/* Temple List */
+
+#Temple-Page .Page-title{
+    text-align: center;
+    padding: 0.75rem;
+    margin: auto;    
+}
+
+#Temple-Page .Page-title h1{
+    margin: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 2rem;    
+}
+
+#Temple-Page .Page-title p{
+    padding: 1rem;
+    width: 50vw;
+    margin: auto;
+    line-height: 1.5rem;
+}
+
+/* Temple Listing */
+
+#Temple-list .grid-container .grid-items{
+    height: auto;
+    background-color: #E5E4E2;
+    cursor: pointer;
+    margin-bottom: 2.5rem;
+}
+
+#Temple-list .grid-container .grid-items:hover{
+    scale: 1.1;
+}
+
+#Temple-list .grid-container .grid-items img{
+    width: 11rem;
+    height: 12rem;
+    padding: 0.25rem;
+}
+
+#Temple-list .grid-container .grid-items h2{
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.25rem;
+}
+
+#Temple-list .grid-container .grid-items h2:hover{
+   color: #54B435;
+}
+
+#Temple-list .grid-container .grid-items p{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 0.25rem;
+}
+
+
+
 
 /* Footer */
 footer{
     background: rgb(53, 53, 53);
-    height: 15vh;
     text-align: center;
     padding: 1rem;
     color: white;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 
@@ -165,24 +227,39 @@ footer{
 
 /* Media Queries */
 @media (max-width: 1140px){
-    .grid-container{
-        /* grid-template-rows: 1fr 1fr; */
-        grid-template-columns: 1fr 1fr;
-        
-    }
-}
 
-@media (max-width: 720px) {
-    .grid-container {
-        /* grid-template-rows: 1fr; */
-        grid-template-columns: 1fr;
+    .grid-container-4{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .grid-container-3{
+        grid-template-columns: 1fr 1fr;
     }
 
     .grid-container .grid-items {
-        height: 22rem;
-        width: 22rem;
+        height: 23rem;
+        width: 23rem;
     }
 
+    #Temple-list .grid-container .grid-items{
+        width: 18rem;
+    }
+}
+
+@media (max-width: 953px){
+    .grid-container-4 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 720px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    #Temple-Page .Page-title p {
+        width: 75vw;
+    }
 }
 
 
@@ -190,11 +267,37 @@ footer{
     header #showcase .poster .content{
         font-size: 90%
     }
+
+    #Temple-Page .Page-title p {
+        width: 90vw;
+    }
 }
 
 @media (max-width: 315px) {
     header #showcase .poster .content {
         font-size: 65%
     }
+}
+
+@media (max-width: 281px) {
+
+    .grid-container .grid-items{
+        height: auto;
+        width: auto;
+    }
+
+    .grid-container .grid-items img{
+        height: 14rem;
+        width: 14rem;
+    }
+
+    #Temple-list .grid-container .grid-items {
+        height: auto;
+        width: auto;
+    }
+
+        #Temple-list .grid-container .grid-items h2{
+            font-size: 90%;
+        }
 }
 
