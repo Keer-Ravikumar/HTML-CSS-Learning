@@ -93,3 +93,6 @@ It grows or shrinks according to the screen size.
     flex-grow: 2
     flex-shrink: 3
 
+Set height and width as auto for automatic height and width setting.
+
+
