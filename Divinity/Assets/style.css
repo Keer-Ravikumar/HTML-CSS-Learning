@@ -214,6 +214,13 @@ footer{
     font-size: 0.8rem;
 }
 
+#main-footer div h3{
+    padding: 0.1rem;
+    margin: 0.05rem;
+    letter-spacing: 0.18rem
+
+}
+
 
 
 
@@ -302,12 +309,4 @@ footer{
     }
 }
 
-@media (max-width: 300px) {
-
-
-
-
-
-
-}
 
