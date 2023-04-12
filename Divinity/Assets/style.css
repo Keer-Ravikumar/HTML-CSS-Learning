@@ -198,6 +198,10 @@ header #showcase .poster .content{
     padding: 0.25rem;
 }
 
+#Temple-list .grid-container .grid-items .btn{
+    scale: none;
+}
+
 
 
 
@@ -245,14 +249,14 @@ footer{
     }
 }
 
-@media (max-width: 953px){
+@media (max-width: 1002px){
     .grid-container-4 {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 
-@media (max-width: 720px) {
+@media (max-width: 780px) {
     .grid-container {
         grid-template-columns: 1fr;
     }
@@ -268,8 +272,27 @@ footer{
         font-size: 90%
     }
 
+    .grid-container .grid-items {
+        height: auto;
+        width: auto;
+    }
+
+    .grid-container .grid-items img {
+        height: 14rem;
+        width: 14rem;
+    }
+
     #Temple-Page .Page-title p {
         width: 90vw;
+    }
+
+    #Temple-list .grid-container .grid-items {
+        height: auto;
+        width: auto;
+    }
+
+    #Temple-list .grid-container .grid-items h2 {
+        font-size: 90%;
     }
 }
 
@@ -279,25 +302,12 @@ footer{
     }
 }
 
-@media (max-width: 281px) {
+@media (max-width: 300px) {
 
-    .grid-container .grid-items{
-        height: auto;
-        width: auto;
-    }
 
-    .grid-container .grid-items img{
-        height: 14rem;
-        width: 14rem;
-    }
 
-    #Temple-list .grid-container .grid-items {
-        height: auto;
-        width: auto;
-    }
 
-        #Temple-list .grid-container .grid-items h2{
-            font-size: 90%;
-        }
+
+
 }
 
