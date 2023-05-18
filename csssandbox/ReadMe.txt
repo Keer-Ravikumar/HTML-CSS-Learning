@@ -57,8 +57,8 @@ You can also use Justify property on the grid container to justify contents to t
 Justify-Items work on grid containers and Justify-Self works on grid item.
     justify-self: center
 
-Horizontally center - Justify
-Vertically center - Align
+Main Axis - Justify ( For row it is horizontal and for column it is vertical )
+Cross Axis - Align ( For row it is vertical and for column it is horizontal )
 
 Align-Items work on grid container and Align-Self works on grid item.
     align-items: center
@@ -77,7 +77,8 @@ It is mostly similar to few properties of grid.
 
 Here, we can set the flex-direction row, column, row-reverse, column-reverse
 
-Justify Contents and Align Contents are also used here: flex-start, flex-end, center, etc.,
+Justify Contents and Align Contents are also used here: flex-start, flex-end, center, stretch etc.,
+You can also align the items inside the flex container using align-self
 
 We have a property called flex-wrap which makes the items responsive with the screen size.
     flex-wrap: wrap
@@ -93,6 +94,12 @@ It grows or shrinks according to the screen size.
     flex-grow: 2
     flex-shrink: 3
 
+We have flex-basis as well which allows the flex items to have a defined width
+
+All these can be combined to one property: flex
+flex: grow shrink basis
+
 Set height and width as auto for automatic height and width setting.
+
 
 
