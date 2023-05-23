@@ -12,6 +12,10 @@ https://themes.getbootstrap.com/
 https://nicepage.com/website-templates
 ---
 
+• To find icon links:
+https://cdnjs.com/
+---
+
 • Forms
 Form >> Form Wrap( The entire form ) >> Form Group( The Label and the Input Box )
 >> form button ( Usually the sign up and login ) 
