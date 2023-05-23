@@ -2,9 +2,17 @@
 /* F0FF42: Yellow 
 82CD47: Green 1 
 54B435: Green 2 
-379237: Green 3 */
+379237: Green 3 
+
+/* O1: #FA8405 */
+/* O2: #FA8405
+O3: #FA8405 */
 
 /* Reset */
+
+/* Title Font */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -21,7 +29,7 @@ h1, h2, h3{
 }
 
 body{
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
 }
 
 
@@ -32,18 +40,18 @@ body{
 
 .logo{
     margin: 0 1.2rem;
-        padding: 0.75rem 0.5rem;
-        float: left;
-        font-family: 'Tilt Prism', cursive;
-        font-size: 1.75rem;
+    padding: 0.75rem 0.5rem;
+    float: left;
+    font-family: 'Tilt Prism', cursive;
+    font-size: 1.75rem;
 }
 
 .btn{
     display: block;
     padding: 0.5rem;   
     text-align: center;
-    background-color: #54B435;
-    color: #F0FF42;
+    /* background-color: #FA8405; */
+    color: black;
 }
 
 .btn:hover{
@@ -64,7 +72,7 @@ body{
     color: white;
     padding: 0.25rem;
     margin: 0.25rem;
-    font-family: 'Sono', sans-serif;
+    /* font-family: 'Sono', sans-serif; */
 }
 
 .grid-container-3 {
@@ -83,34 +91,50 @@ body{
 
 /* Nav Bar */
 #navbar{
-    background: #54B435;
+    /* background: #FA8405; */
     overflow: auto;
 }
 
 #navbar .logo a{
-    color:#F0FF42;
+    color:#FA8405;
 }
 
 
 /* Showcase */
-header #showcase{
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.75)), url('./img/Cover.jpg') center center/cover no-repeat;
-    height: 90vh;
+header{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./img/Master.jpg') center center/cover no-repeat;
+    height: 100vh;
     position: relative;
 }
 
 header #showcase .poster{
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
+    bottom: 15%;
+    left: 75%;
+    transform: translate(-50%, -50%);
 }
 
 header #showcase .poster .content{
-    margin: 0.5rem;
-    padding: 0.5rem;
+    margin: 0.75rem;
+    padding: 0.75rem;
     text-align: center;
-    width: 90vw;
+    width: 50vw;
+    font-family: 'Cormorant Garamond', serif;
+    align-items: center;
+    /* border: white solid 3px; */
+}
+
+header #showcase .poster .content h2{
+    margin: 0.75rem;
+    font-size: 2rem;
+    letter-spacing: 0.25rem;
+}
+
+header #showcase .poster .content a{
+    padding: 0.75rem;
+    font-family: 'Tilt Prism', cursive;
+    font-size: 3rem;
+    color: #FA8405;
 }
 
 
@@ -189,7 +213,7 @@ header #showcase .poster .content{
 }
 
 #Temple-list .grid-container .grid-items h2:hover{
-   color: #54B435;
+   /* color: #FA8405; */
 }
 
 #Temple-list .grid-container .grid-items p{
